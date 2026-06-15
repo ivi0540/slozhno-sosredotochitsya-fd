@@ -1,5 +1,152 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+:root {
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --IBM-Plex-Mono-font: "IBM Plex Mono", sans-serif;
+  --padding-page: 10px;
+
+  /* темная тема */
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+}
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  padding: var(--padding-page);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.rec {
+  position: absolute;
+  top: var(--padding-page);
+  right: 0;
+  color: var(--accent-color);
+  font-family: var(--IBM-Plex-Mono-font);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
+}
+.rec::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: calc(var(--padding-page) + 10px);
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::before {
+  top: 0;
+  right: 0;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  bottom: 20px;
+  left: 0;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header {
+  display: grid;
+  /* grid-template-rows: repeat(3, auto); */
+  grid-template-rows: 1fr min-content 1fr;
+  height: 100vh;
+  min-height: 668px;
+  /* padding-top: 66px; */
+}
+
+/* 1 */
+.header__theme-menu {
+  justify-self: end;
+  align-self: start;
+  margin-top: 66px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+}
+
+.header__theme-menu-item {
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 1.5px 13px;
+  color: var(--accent-color);
+  font-family: var(--IBM-Plex-Mono-font);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 18px;
+  text-transform: lowercase;
+  background-color: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_type_light {
+}
+
+.header__theme-menu-button_type_auto {
+}
+
+.header__theme-menu-button_type_dark {
+}
+/* 2 */
+.header__title {
+  justify-self: start;
+  align-self: start;
+  color: var(--title-color);
+  font-family: var(--IBM-Plex-Mono-font);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  /* Для планшета и десктопа */
+  /* clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)  */
+  margin-top: -20px;
+}
+/* 3 */
+.header__text {
+  /* margin-top: 1px; */
+  /* margin-bottom: 1px; */
+  margin-top: 55px;
+
+  justify-self: start;
+  align-self: start;
+  color: var(--bg-color);
+  font-family: var(--IBM-Plex-Mono-font);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px;
+  background-color: var(--accent-color);
 }
