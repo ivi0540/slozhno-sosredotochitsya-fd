@@ -8,6 +8,7 @@
   /* темная тема */
   --title-color: #db00ff;
   --accent-color: #ff0070;
+  --text-color: #f1b2ce;
 }
 
 .page {
@@ -123,6 +124,9 @@
 .header__title {
   justify-self: start;
   align-self: start;
+  /* Для планшета и десктопа */
+  /* clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)  */
+  margin-top: -20px;
   color: var(--title-color);
   font-family: var(--IBM-Plex-Mono-font);
   font-weight: 700;
@@ -130,18 +134,14 @@
   font-style: normal;
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
-  /* Для планшета и десктопа */
-  /* clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)  */
-  margin-top: -20px;
 }
 /* 3 */
 .header__text {
+  justify-self: start;
+  align-self: start;
   /* margin-top: 1px; */
   /* margin-bottom: 1px; */
   margin-top: 55px;
-
-  justify-self: start;
-  align-self: start;
   color: var(--bg-color);
   font-family: var(--IBM-Plex-Mono-font);
   font-weight: 700;
@@ -150,3 +150,71 @@
   line-height: 23.4px;
   background-color: var(--accent-color);
 }
+
+/* text-container styles [ */
+
+.text-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  background-color: var(--bg-color);
+}
+
+.text-container__item {
+  margin-top: 49px;
+}
+
+.text-container__item:first-of-type {
+  margin-top: 30px;
+}
+
+.title-decor {
+  color: var(--accent-color);
+  font-family: var(--IBM-Plex-Mono-font);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px;
+}
+
+.text-container__title {
+  margin-top: 20px;
+  color: var(--bg-color);
+  font-family: var(--IBM-Plex-Mono-font);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px;
+  background-color: var(--accent-color);
+}
+
+.text-container__title--special {
+  font-weight: 400;
+  font-style: Regular;
+  letter-spacing: 0%;
+  leading-trim: NONE;
+}
+
+.text-container__text {
+  margin-top: 10px;
+  color: var(--text-color);
+  font-family: var(--IBM-Plex-Mono-font);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px;
+}
+
+.text-container__text-link {
+  text-shadow: 2px 1px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.text-container__text-link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.text-container__text-link:focus {
+  outline: 1px solid var(--text-color);
+}
+
+/* text-container styles ] */
