@@ -11,8 +11,23 @@
   */
 
   /* темная тема */
-  --title-color: #db00ff;
-  --accent-color: #ff0070;
-  --text-color: #f1b2ce;
   --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --menu-text-color: #ff0070;
+  --title-color: #db00ff;
+  --bg-image: url(../images/cover-image-dark.png);
+  --btn-hover-color: rgba(255, 0, 112, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --menu-text-color: #ff0070;
+    --title-color: #db00ff;
+    --bg-image: url(../images/cover-image-dark.png);
+    --btn-hover-color: rgba(255, 0, 112, 0.4);
+  }
 }

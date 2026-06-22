@@ -2,3 +2,8 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --IBM-Plex-Mono-font: "IBM Plex Mono", sans-serif;
+  --padding-page: 10px;
+  --gallery-list-padding: 10px;
+}

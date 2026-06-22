@@ -1,15 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --bg-image: url(../images/cover-image-dark.png);
-  --IBM-Plex-Mono-font: "IBM Plex Mono", sans-serif;
-  --padding-page: 10px;
-  --gallery-list-padding: 10px;
-}
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   position: relative;
-  padding: var(--padding-page);
   font-family: var(--IBM-Plex-Mono-font);
   background-image: var(--bg-image);
   background-position: center;
@@ -53,15 +46,15 @@
 .decorated-zone::before {
   top: 0;
   right: 0;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--menu-text-color);
+  border-right: 1px solid var(--menu-text-color);
 }
 
 .decorated-zone::after {
   bottom: 20px;
   left: 0;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--menu-text-color);
+  border-left: 1px solid var(--menu-text-color);
 }
 /* header [ */
 .header {
@@ -69,6 +62,7 @@
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
   min-height: 668px;
+  padding: var(--padding-page);
 }
 
 .header__theme-menu {
@@ -86,7 +80,7 @@
 .header__theme-menu-button {
   border: none;
   padding: 1.5px 13px;
-  color: var(--accent-color);
+  color: var(--menu-text-color);
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -100,11 +94,15 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--btn-hover-color);
 }
+
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--accent-color);
   outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button_type_auto {
@@ -115,7 +113,8 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-text-color);
+  pointer-events: none;
 }
 
 .header__title {
@@ -143,6 +142,10 @@
 }
 /* header ] */
 
+.main {
+  padding: var(--padding-page);
+}
+
 /* text-container styles [ */
 
 .text-container {
@@ -159,7 +162,7 @@
 }
 
 .title-decor {
-  color: var(--accent-color);
+  color: var(--menu-text-color);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -176,10 +179,8 @@
   background-color: var(--accent-color);
 }
 
-.text-container__title--special {
+.text-container__title.text-container__title--special {
   font-weight: 400;
-  font-style: Regular;
-  letter-spacing: 0%;
 }
 
 .text-container__text {
@@ -207,17 +208,6 @@
 /* text-container styles ] */
 
 /* gallery styles [ */
-
-.text-container__title {
-  margin-top: 20px;
-  color: var(--bg-color);
-
-  font-weight: 700;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 23.4px;
-  background-color: var(--accent-color);
-}
 
 .gallery-title {
   margin-top: 50px;
@@ -250,6 +240,7 @@
   height: 100vh;
   min-height: 668px;
   margin-top: 40px;
+  padding: var(--padding-page);
 }
 
 .footer__title {
@@ -277,7 +268,6 @@
     --gallery-list-padding: 20px;
   }
 
-  /* header [ */
   .header__theme-menu {
     margin-top: 172px;
   }
@@ -297,9 +287,7 @@
   .header::after {
     bottom: 40px;
   }
-  /* header ] */
 
-  /* text-container ] */
   .text-container {
     margin-top: 19px;
   }
@@ -430,8 +418,6 @@
   .footer.decorated-zone::after {
     bottom: 0;
   }
-
-  /* text-container [ */
 }
 @media (min-width: 1024px) {
   .header__theme-menu {
@@ -517,3 +503,7 @@
   }
 }
 /* adaptability ]*/
+
+:root.theme-light .rec {
+  display: none;
+}
