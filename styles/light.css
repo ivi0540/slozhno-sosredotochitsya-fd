@@ -18,6 +18,7 @@
   --title-color: #ffc2e6;
   --bg-image: url(../images/cover-image-light.png);
   --btn-hover-color: rgba(50, 49, 45, 0.4);
+  --background-color: #fff1f7;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,8 +30,13 @@
     --title-color: #ffc2e6;
     --bg-image: url(../images/cover-image-light.png);
     --btn-hover-color: rgba(50, 49, 45, 0.4);
+    --background-color: #fff1f7;
   }
   .rec {
     display: none;
   }
 }
+
+/* :root.theme-light .rec {
+  display: none;
+} */

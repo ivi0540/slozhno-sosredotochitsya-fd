@@ -3,7 +3,9 @@
   и их переопределение под различные устройства
 */
 :root {
-  --IBM-Plex-Mono-font: "IBM Plex Mono", sans-serif;
+  --main-font: "IBM Plex Mono";
   --padding-page: 10px;
-  --gallery-list-padding: 10px;
+  /* --gallery-list-padding: 10px; */
+  /* --padding-page: 20px; */
+  /* --gallery-list-padding: 20px; */
 }
