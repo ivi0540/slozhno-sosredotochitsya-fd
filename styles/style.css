@@ -446,7 +446,6 @@
     justify-self: start;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    width: auto;
     width: 260px;
   }
 
