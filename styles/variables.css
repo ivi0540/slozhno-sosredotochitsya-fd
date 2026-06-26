@@ -5,7 +5,10 @@
 :root {
   --main-font: "IBM Plex Mono";
   --padding-page: 10px;
-  /* --gallery-list-padding: 10px; */
-  /* --padding-page: 20px; */
-  /* --gallery-list-padding: 20px; */
+}
+
+@media (min-width: 768px) {
+  :root {
+    --padding-page: 20px;
+  }
 }
