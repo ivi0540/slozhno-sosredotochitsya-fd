@@ -5,6 +5,16 @@
 :root {
   --main-font: "IBM Plex Mono";
   --padding-page: 10px;
+
+  /* темная тема (по умолчанию) */
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --menu-text-color: #ff0070;
+  --title-color: #db00ff;
+  --bg-image: url(../images/cover-image-dark.png);
+  --btn-hover-color: rgba(255, 0, 112, 0.4);
+  --background-color: #000028;
 }
 
 @media (min-width: 768px) {
