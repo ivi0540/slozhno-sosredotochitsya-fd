@@ -80,7 +80,7 @@
 }
 
 .header__theme-menu-button {
-  border: none;
+  border: 1px solid transparent;
   padding: 1.5px 13px;
   color: var(--menu-text-color);
   font-weight: 400;
@@ -149,6 +149,13 @@
 }
 
 /* text-container styles [ */
+
+.cards {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: auto;
+  gap: 49px;
+}
 
 .text-container {
   display: flex;

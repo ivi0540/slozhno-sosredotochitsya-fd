@@ -22,6 +22,10 @@
    
 }
 
+:root.theme-light .rec {
+  display: inline-block;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000028;
