@@ -3,11 +3,11 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   font-family: var(--main-font), "Courier New", monospace;
+  background-color: var(--background-color);
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: var(--background-color);
 }
 
 .rec {
@@ -144,8 +144,11 @@
 /* header ] */
 
 .main {
-  padding: var(--padding-page);
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
   margin-top: 30px;
+  padding: var(--padding-page);
 }
 
 /* text-container styles [ */
@@ -155,12 +158,6 @@
   grid-template-columns: auto;
   grid-auto-rows: auto;
   gap: 50px;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 49px;
 }
 
 .title-decor {
@@ -187,11 +184,11 @@
 .content-block-title-alternative {
   margin-top: 20px;
   color: var(--bg-color);
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px;
   background-color: var(--accent-color);
-  font-weight: 400;
 }
 
 /* .content-block p { */
@@ -447,8 +444,8 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
-    margin-top: 10px;
     gap: 20px;
+    margin-top: 10px;
   }
 
   .gallery__list-item {
