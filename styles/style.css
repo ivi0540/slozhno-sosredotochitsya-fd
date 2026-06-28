@@ -336,12 +336,6 @@
     margin-top: 20px;
   }
 
-  /* .concentration-decrease-block {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: auto;
-  } */
-
   .cards__item_alternative .title-decor {
     width: 30%;
   }
@@ -359,25 +353,6 @@
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
-
-  /* .content-block-alternative h3 {
-    margin-top: 20px;
-    color: var(--bg-color);
-    font-weight: 700;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 23.4px;
-    background-color: var(--accent-color);
-  } */
-
-  /* .content-block-alternative p {
-    margin-top: 10px;
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 23.4px;
-  } */
 
   /* gallery [ */
 
