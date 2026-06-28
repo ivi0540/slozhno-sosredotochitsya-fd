@@ -145,7 +145,7 @@
 
 .main {
   padding: var(--padding-page);
-  margin-top: 7px;
+  margin-top: 30px;
 }
 
 /* text-container styles [ */
@@ -187,7 +187,7 @@
 .content-block h4 {
   margin-top: 20px;
   color: var(--bg-color);
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px;
@@ -335,7 +335,8 @@
   }
 
   .main {
-    margin-top: -3px;
+    /* margin-top: -3px; */
+    margin-top: 20px;
   }
 
   .cards {
@@ -387,7 +388,7 @@
   .content-block h4 {
     margin-top: 20px;
     color: var(--bg-color);
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 18px;
     font-style: normal;
     line-height: 23.4px;
