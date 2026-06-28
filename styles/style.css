@@ -171,8 +171,9 @@
   line-height: 23.4px;
 }
 
-.content-block h3,
-.content-wrapper h3 {
+/* .content-block h3,
+.content-wrapper h3 */
+.content-block-title {
   margin-top: 20px;
   color: var(--bg-color);
   font-weight: 700;
@@ -182,7 +183,8 @@
   background-color: var(--accent-color);
 }
 
-.content-block h4 {
+/* .content-block h4 { */
+.content-block-title-alternative {
   margin-top: 20px;
   color: var(--bg-color);
   font-size: 18px;
@@ -192,7 +194,8 @@
   font-weight: 400;
 }
 
-.content-block p {
+/* .content-block p { */
+.content-block-text {
   margin-top: 10px;
   color: var(--text-color);
   font-weight: 400;
@@ -201,7 +204,7 @@
   line-height: 23.4px;
 }
 
-.content-block-alternative h3 {
+/* .content-block-alternative h3 {
   margin-top: 20px;
   color: var(--bg-color);
   font-weight: 700;
@@ -209,16 +212,16 @@
   font-style: normal;
   line-height: 23.4px;
   background-color: var(--accent-color);
-}
+} */
 
-.content-block-alternative p {
+/* .content-block-alternative p {
   margin-top: 10px;
   color: var(--text-color);
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px;
-}
+} */
 
 .text-container__text {
   margin-top: 10px;
@@ -357,8 +360,7 @@
     grid-auto-rows: auto;
   }
 
-
-  .content-block h3,
+  /* .content-block h3,
   .content-wrapper h3 {
     margin-top: 20px;
     color: var(--bg-color);
@@ -367,9 +369,9 @@
     font-style: normal;
     line-height: 23.4px;
     background-color: var(--accent-color);
-  }
+  } */
 
-  .content-block h4 {
+  /* .content-block h4 {
     margin-top: 20px;
     color: var(--bg-color);
     font-size: 18px;
@@ -377,16 +379,16 @@
     line-height: 23.4px;
     background-color: var(--accent-color);
     font-weight: 400;
-  }
+  } */
 
-  .content-block p {
+  /* .content-block p {
     margin-top: 10px;
     color: var(--text-color);
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
     line-height: 23.4px;
-  }
+  } */
 
   .cards__item .title-decor {
     margin-top: 20px;
