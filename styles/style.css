@@ -179,13 +179,7 @@
 }
 
 .content-block-title-alternative {
-  margin-top: 20px;
-  color: var(--bg-color);
   font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 23.4px;
-  background-color: var(--accent-color);
 }
 
 .content-block-text {
@@ -297,9 +291,8 @@
 
   .header__text {
     justify-self: end;
-    width: 49%;
+    width: 364px;
     margin-top: 162px;
-    margin-right: -1px;
   }
 
   .main {
@@ -346,6 +339,7 @@
     grid-auto-rows: auto;
     margin-top: 10px;
     margin-bottom: -10px;
+    /* ++++++++++++++++++++++++++++++++++++++++++ */
   }
 
   .content-wrapper-alternative {
@@ -428,7 +422,8 @@
   }
 
   .header__text {
-    margin-top: 112px;
+    margin-top: 114px;
+    width: 492px;
   }
 
   .header__title {
