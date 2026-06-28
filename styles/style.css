@@ -316,6 +316,8 @@
     display: grid;
     grid-template-columns: auto;
     grid-auto-rows: auto;
+    align-items: start;
+    align-content: start;
   }
 
   .cards__item .title-decor {
@@ -324,12 +326,6 @@
 
   .cards__item_alternative .title-decor {
     width: 30%;
-  }
-
-  .content-wrapper-alternative {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
   }
 
   /* gallery [ */
