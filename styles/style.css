@@ -17,7 +17,7 @@
   color: var(--accent-color);
   font-weight: 400;
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 25px;
 }
 .rec::after {
@@ -85,7 +85,7 @@
   color: var(--menu-text-color);
   font-weight: 400;
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 18px;
   text-transform: lowercase;
   background-color: transparent;
@@ -125,7 +125,7 @@
   color: var(--title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
@@ -137,7 +137,7 @@
   color: var(--bg-color);
   font-weight: 700;
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 23.4px;
   background-color: var(--accent-color);
 }
@@ -164,7 +164,7 @@
   color: var(--menu-text-color);
   font-weight: 700;
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 23.4px;
 }
 
@@ -173,12 +173,12 @@
   color: var(--bg-color);
   font-weight: 700;
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 23.4px;
   background-color: var(--accent-color);
 }
 
-.content-block-title-alternative {
+.content-block-subtitle {
   font-weight: 400;
 }
 
@@ -187,7 +187,7 @@
   color: var(--text-color);
   font-weight: 400;
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 23.4px;
 }
 
@@ -196,7 +196,7 @@
   color: var(--text-color);
   font-weight: 400;
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 23.4px;
 }
 
@@ -221,7 +221,7 @@
   color: var(--bg-color);
   font-weight: 700;
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 23.4px;
   background-color: var(--accent-color);
 }
@@ -254,7 +254,7 @@
   color: var(--title-color);
   font-weight: 700;
   font-size: 116px;
-  font-style: normal;
+  /* font-style: normal; */
   line-height: 82.5%;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
